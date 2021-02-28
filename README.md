@@ -1,14 +1,15 @@
-Role Name
-=========
+Apt upgrade ansible role
+========================
+
+![CI](https://github.com/baztian/ansible-apt-upgrade/workflows/CI/badge.svg)
 
 Role to configure and upgrade base/official apt sources for ubuntu and mint.
 
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
-
     - hosts: servers
+      become: yes
     - vars:
         official_apt_sources_replacements:
         - regexp: http://packages.linuxmint.com
@@ -21,4 +22,4 @@ Including an example of how to use your role (for instance, with variables passe
 License
 -------
 
-GPLv3
+MIT
