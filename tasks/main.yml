@@ -1,6 +1,6 @@
 ---
 - name: Check if "official-package-repositories" list file exists
-  stat: 
+  stat:
     path: /etc/apt/sources.list.d/official-package-repositories.list
   register: repos_list
 - name: Setup mirrors
